@@ -1,0 +1,52 @@
+html, body{
+  font-family: sans-serif;
+  background-image: url("back-ground.jpg");
+}
+* {
+  box-sizing: border-box;
+}
+.container{
+  width: 1000px;
+  margin: 0 auto;
+  padding-left: 70px;
+}
+.card{
+  float: left;
+  margin: 10px;
+  height: 250px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 10px 10px 10px black;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.unactive{
+  background-image: url("card.jpg");
+  background-size: 200px 250px;
+  background-repeat: no-repeat;
+}
+.selected{
+  background-image: url("card-front.jpg");
+  background-size: 200px 250px;
+  background-repeat: no-repeat;
+
+}
+.card:hover{
+  cursor: pointer;
+  border: 3px solid black;
+}
+.card h2{
+  margin-top: 80px;
+  font-size: 60px;
+}
+
+h1{
+  margin-top: 70px;
+  color: white;
+  text-align: center;
+}
+.win{
+  font-size: 100px;
+  color: #fff;
+  text-shadow:#fff 0 0 15px,#fff 0 0 25px,#ff00de 0 0 30px,#ff00de 0 0 40px,#f0f 0 0 50px,#f0f 0 0 60px;
+}
