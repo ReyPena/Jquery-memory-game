@@ -1,9 +1,13 @@
 html, body {
   font-family: sans-serif;
   background-image: url("../img/back-ground.jpg");
+  height: 100%;
 }
 * {
   box-sizing: border-box;
+}
+.corner{
+  float: right;
 }
 .container {
   width: 1000px;
@@ -48,10 +52,17 @@ html, body {
   background-image: url("../img/score.png");
   background-size: 125px 100px;
   background-repeat: no-repeat;
+}
 
+.creator{
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #2e1b47;
+  color: white;
+  float: right;
 }
 h1 {
-  margin-top: 70px;
+  /*margin-top: 70px;*/
   color: white;
   text-align: center;
 }
