@@ -28,47 +28,45 @@ $(document).ready(function() {
     },
 
     clickHandlers: function() {
+      var counter = 1;
       $(".card").on("click", function() {
         $(this).html("<h2>" + $(this).data("cardValue") + "</h2>").addClass("selected");
         $(this).removeClass("unactive");
         app.checkMatch();
+        $(".score").html("Score: " + counter);
+        counter++;
       });
-    },
-
-    score: function() {
-      var counter = 0;
-      counter++;
-      console.log(counter);
-      return $(".score").html("your score is:");
     },
 
     checkMatch: function() {
       if ($(".selected").length == 2) {
         if ($(".selected").first().data("cardValue") == $(".selected").last().data("cardValue")) {
-          $(".selected").each(function() {
-            $(this).animate({
-              opacity: 0
-            }).removeClass("unmatched");
-          });
-          // this will remove the selected class
-          $(".selected").each(function() {
-            $(this).removeClass("selected");
-          });
-          app.checkWin();
+          setTimeout(function () {
+            $(".selected").each(function() {
+              $(this).animate({
+                opacity: 0
+              }).removeClass("unmatched");
+            });
+            // this will remove the selected class
+            $(".selected").each(function() {
+              $(this).removeClass("selected");
+            });
+            app.checkWin();
+          },500);
         } else {
           setTimeout(function() {
             $(".selected").each(function() {
               $(this).html("").removeClass("selected");
               $(this).addClass("unactive");
             });
-          }, 700);
+          }, 500);
         }
       }
     },
 
     checkWin: function() {
       if ($(".unmatched").length === 0) {
-        $(".container").html("<h1 class=win>congratulations!</h1>" + "<button class=play>Play Again</button>");
+        $(".container").html("<h1 class=win>congratulations!</h1>" + "<div class=paper><button class=play>Play Again</button></div>");
         // this is the actions for the butons
         $(".play").on("click", function() {
           location.reload();
