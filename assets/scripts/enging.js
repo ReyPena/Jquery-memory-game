@@ -52,14 +52,14 @@ $(document).ready(function() {
               $(this).removeClass("selected");
             });
             app.checkWin();
-          },500);
+          },100);
         } else {
           setTimeout(function() {
             $(".selected").each(function() {
               $(this).html("").removeClass("selected");
               $(this).addClass("unactive");
             });
-          }, 500);
+          }, 400);
         }
       }
     },
