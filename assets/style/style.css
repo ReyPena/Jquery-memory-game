@@ -12,6 +12,7 @@ html, body {
 .container {
   width: 1000px;
   margin: 0 auto;
+  display: block;
   padding-left: 70px;
 }
 .card {
@@ -47,8 +48,8 @@ html, body {
   height: 8em;
   width: 8em;
   padding: 2.5em 1.5em;
-  float: right;
-  margin-right: 8em;
+  margin-left: 90%;
+  display: block;
   background-image: url("../img/score.png");
   background-size: 125px 100px;
   background-repeat: no-repeat;
@@ -58,6 +59,7 @@ html, body {
   font-weight: bold;
   text-decoration: none;
   background-color: #2e1b47;
+  margin: 2%;
   color: white;
   float: right;
 }
