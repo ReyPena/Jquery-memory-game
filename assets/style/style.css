@@ -51,6 +51,7 @@ html, body {
   background-image: url("../img/score.png");
   background-size: 125px 100px;
   background-repeat: no-repeat;
+  display: inline-block;
 }
 
 .creator{
