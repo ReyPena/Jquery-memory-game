@@ -10,7 +10,7 @@ html, body {
   float: right;
 }
 .container {
-  width: 945px;
+  width: 894px;
   margin: 0 auto;
   display: block;
 }
@@ -63,9 +63,9 @@ html, body {
   float: right;
 }
 h1 {
-  /*margin-top: 70px;*/
   color: white;
   text-align: center;
+  padding-left: 2em;
 }
 .win {
   font-size: 100px;
